@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nishant Resume Animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            color: white;
+        }
+
+        /* Intro Text */
+        .intro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bold;
+            animation: fadeOut 3s ease forwards;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        /* Resume Container */
+        .resume {
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+            animation: slideUp 2.5s ease forwards;
+            animation-delay: 3s;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        @keyframes slideUp {
+            to {
+                bottom: 5%;
+            }
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            color: #2c5364;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #203a43;
+            border-bottom: 2px solid #2c5364;
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro">Hello I am Nishant</div>
+
+    <div class="resume">
+        <h1>Nishant Karn</h1>
+        <p><strong>Phone:</strong> 7303671413 | 
+           <strong>Email:</strong> nishantkarn217@gmail.com</p>
+        <p><strong>Location:</strong> Faridabad, Haryana | 
+           <strong>LinkedIn:</strong> linkedin.com/in/nishant-karn-265a24239</p>
+
+        <h2>Career Objective</h2>
+        <p>
+            Aspiring finance and accounting professional with strong foundation in 
+            accounting, bookkeeping, income tax and GST using Tally Prime. 
+            Seeking opportunities to develop expertise in financial modeling and analysis 
+            to contribute to organizational growth.
+        </p>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>Corporate E-Accounting Diploma - IFDA Institute (Best Score)</li>
+            <li>Personality Development - FEA Institute</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+            <li>B.Com – DU SOL, Delhi University (2022–2025)</li>
+            <li>Class 12 – 87% (2022)</li>
+            <li>Class 10 – 83.4% (2020)</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Freelancer - R&D Department, Intuitive Tech Solutions (1 Year)</li>
+            <li>Accounts Intern – 5 months at Kumar Govind & Co. (GST & Bookkeeping)</li>
+        </ul>
+
+        <h2>Achievements</h2>
+        <ul>
+            <li>Golden Certificate – FEA Institute</li>
+            <li>Continuously upgrading professional skills</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Accounting & Bookkeeping</li>
+            <li>Taxation & GST</li>
+            <li>Balance Sheet & Report Analysis</li>
+            <li>MS Office (Excel, Word, PowerPoint)</li>
+            <li>Problem Solving & Analytical Thinking</li>
+            <li>Time Management & Teamwork</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Watching movies & educational podcasts</li>
+            <li>Understanding geopolitics & politics</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
